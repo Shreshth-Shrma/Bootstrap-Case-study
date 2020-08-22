@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <link rel="stylesheet" href="style1.css">
+     <script src="valid.js"></script>
+    <title>TruYum</title>
+  </head>
+  <body>
+    <div class="container">
+    
+        <nav id="nv" class="navbar navbar-expand-lg  border border-dark">
+            <h3 class="text-white">truYum</h3>
+            <img src="fork.jpg" width="50px" height="50px" class="ml-5">
+            <a href="Menu.html" class="text-white ml-auto mr-5"><u>Menu</u></a>
+
+            
+        </nav>
+        <h2></h2>
+    <div class="container pt-5 pb-5">
+        <h2 class="text dark">Edit Menu Item</h2>
+
+        <form name="myForm" action="edit-menu-item-status.html" onsubmit="return validate()" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="form-control border border-dark" id="name" placeholder="Sandwich"> 
+            </div>
+
+            <div class="form-row">
+                 <div class="form col"> 
+                    <label for="prc">Price(Rs.)</label>
+                    <input type="text" class="form-control" name="price" placeholder="00">
+            
+                 </div>
+
+                 <div class="form col"> 
+                    <label for="prc" class="ml-5">Active</label><br>
+                    <div class="form-check form-check-inline ml-5">
+                    <input class="form-check-input " type="radio" name="Radio" id="Radio1" value="option1" checked>
+                    <label class="form-check-label" for="Radio1">YES</label>
+                    <input class=" form-check-input ml-2" type="radio" name="Radio" id="Radio2" value="option2"> 
+                    <label class="form-check-label" for="Radio2">NO</label>
+                 </div>
+                </div>
+                 
+                 <div class="form col"> 
+                    <label for="prc">Date Of Launch</label>
+                    <input type="date" class="form-control" name="date">
+            
+                 </div>
+
+                 <div class="form col"> 
+                    <label for="prc" class="ml-1">Category</label>
+                    <select class="custom-select mr-sm-2" id="Select">
+                        <option selected>Main Course</option>
+                        <option value="1">Starters</option>
+                        <option value="2">Dessert</option>
+                        <option value="3">Drinks</option>
+                      </select>
+            
+                 </div></div>
+
+                 <div class="custom-control custom-checkbox mr-sm-2 mt-3">
+                    <input type="checkbox" class="custom-control-input" id="chk" checked>
+                    <label class="custom-control-label" for="chk">Free Delivery</label>
+                  </div>
+                  <div  class="col-auto my-1 mt-4">
+                    <button id="btn" type="submit" class="btn btn-primary">Save</button>
+                  </div>
+
+
+            
+
+            
+
+
+        </form>
+    </div>
+
+
+        <footer id="footer" class="page-footer border border-dark"><p class="text-dark">Copyright &copy; 2019</p></footer>
+    
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
